@@ -29,5 +29,20 @@ AskUp의 주요 목적은 팀 협업과 생산성을 향상시키기 위해 Slac
 
 ## Github Clone
 ```bash
-git clone https://github.com/dongkoony/AskUp.git
+$ git clone https://github.com/dongkoony/AskUp.git
+```
+
+## pip 패키지 설치
+```bash
+$ pip install -r requirements.txt
+```
+
+## Python 가상 환경 접속
+```bash
+$ source venv/bin/activate  # macOS/Linux
+$ .\venv\Scripts\activate   # Windows
+```
+### 가상환경을 비활성화하려면 다음 명령을 실행합니다
+```bash
+$ deactivate
 ```
