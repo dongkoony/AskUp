@@ -1,0 +1,15 @@
+service: AskUp
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: dev
+  region: ap-northeast-2 # 서울 리전
+
+functions:
+  myFunction:
+    handler: handler.my_handler # 여기서 handler는 Python 파일 이름, my_handler는 함수 이름입니다.
+    events:
+      - http:
+          path: my-path # API Gateway를 통해 접근할 때의 경로
+          method: get # HTTP 메소드
